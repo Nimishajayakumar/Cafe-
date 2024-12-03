@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+   
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+    
+    .header {
+      padding: 40px;
+      text-align: center;
+      background: #2a1e97;
+      color: white;
+    }
+    
+   
+    .header h1 {
+      font-size: 40px;
+    }
+    
+    
+    .row {  
+      display: -ms-flexbox; 
+      display: flex;
+      -ms-flex-wrap: wrap; 
+      flex-wrap: wrap;
+    }
+    
+  
+    .side {
+      -ms-flex: 30%;
+      flex: 30%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+    
+    
+    .main {   
+      -ms-flex: 70%; 
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
+    body {
+    font-family: 'Arial', sans-serif;
+            background-color : #f4f4f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+        }
+        .menu-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 20px;
+            padding: 15px;
+            text-align: center;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .menu-item h3 {
+            font-size: 1.6em;
+            margin: 15px 0;
+            color: #333;
+        }
+        .menu-item p {
+            font-size: 1.1em;
+            color: #666;
+            margin: 10px 0;
+        }
+        .menu-item .price {
+            font-weight: bold;
+            color: #201f1e;
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+        .menu-item .description {
+            font-size: 1em;
+            color: #777;
+        }
+   
+  
+    
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+    }
+    
+   
+    @media screen and (max-width: 700px) {
+      .row {   
+        flex-direction: column;
+      }
+    }
+    
+    
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+    </style>
+    </head>
+    <body>
+    <div class="header">
+      <h1>CAFEERICA</h1>
+      <p>Taste met you..</p>
+    </div>
+    
+    <div class="navbar">
+      <a href="#">Menu</a>
+      <a href="#">Booking</a>
+      <a href="#">Review</a>
+      <a href="#" class="right">Contact</a>
+    </div>
+    
+    <div class="row">
+      <div class="side">
+        <h2>Inside US</h2>
+        <h5>Love We Show to Delicious!!!</h5>
+        <img src="https://plus.unsplash.com/premium_photo-1664970900025-1e3099ca757a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt= ""  width="300" height="300">
+        <img src="https://lh7-us.googleusercontent.com/docsz/AD_4nXd466HCjDy6hs85SH5juZ2senFv5a0DnkjimuBcbDwYMyeM1MdajjLKJc_7wNeXPMXDSZ7jJ-YEhynFOG-WLO8-Usq941M-WTwEWR-HeiNn-2ZbLNDpqj6yWWOIfOcoZEGSVX2ZKkcaAZFlRgqfbZQIqifZ?key=08Pjnr7vpfMb0L5wh1Lxfw" width="300" height="300">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipOEfSI6lhbDnLcrbPk4U5kDkKERFtgIVpD0BCtn=s680-w680-h510" alt="" width="300" height="300">
+        <p>Some text about me in culpa qui officia deserunt mollit anim.. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro architecto dolores saepe, quidem accusantium facere molestiae. Amet obcaecati et at, magnam maiores repudiandae qui provident architecto nam, vero dolores nesciunt.</p>
+        <p><span style='font-size:55px;'>&#127828;&#127829;</span></p>
+
+       <div class="menu-container">
+       
+        <div class="menu-item">
+            <img src="https://cdn.loveandlemons.com/wp-content/uploads/2023/07/margherita-pizza-recipe.jpg" alt="Item 1" width="200" height="200">
+            <h3>Pizza Margherita</h3>
+            <p>Delicious Italian pizza with fresh mozzarella, basil, and tomato sauce.</p>
+            <p class="price">Rs.250</p>
+        </div>
+
+       
+        <div class="menu-item">
+            <img src="https://www.burgerfi.com/wp-content/uploads/2022/01/BaconCheeseburger-Fries-Coke-scaled.jpg" alt="Item 2" width="200" height="200">
+            <h3>Burger & Fries</h3>
+            <p>Classic cheeseburger served with crispy fries.</p>
+            <p class="price">Rs.350</p>
+        </div>
+
+       
+        <div class="menu-item">
+            <img src="https://www.thespruceeats.com/thmb/ovIQQQxQajADuIE2lqhgqq7ppyE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/pasta-carbonara-recipe-5210168-hero-01-80090e56abc04ca19d88ebf7fad1d157.jpg" alt="Item 3" width="200" height="200">
+            <h3>Pasta Carbonara</h3>
+            <p>Creamy pasta with pancetta, egg, and parmesan cheese.</p>
+            <p class="price">Rs.200</p>
+        </div>
+
+       
+        <div class="menu-item">
+            <img src="https://reciperunner.com/wp-content/uploads/2017/07/Grilled-Chicken-Caesar-Salad-Photograph.jpg" alt="Item 4" width="200" height="200">
+            <h3>Caesar Salad</h3>
+            <p>Crisp romaine lettuce with Caesar dressing and parmesan cheese and in house grilled chicken with sauce</p>
+            <p class="price">Rs.280</p>
+            </div>
+
+            <div class="menu-item">
+              <img src="https://drivemehungry.com/wp-content/uploads/2019/07/homemade-korean-strawberry-milk-8.jpg" alt="Item 5" width="200" height="200">
+            <h3>Strawberry Lattee</h3>
+            <p>Fresh Strawberry with inhouse preparation with freshcream on top.</p>
+            <p class="price">Rs.150</p>
+        </div>
+        <div class="menu-item">
+          <img src="https://food-images.files.bbci.co.uk/food/recipes/easy_chocolate_cake_31070_16x9.jpg" alt="Item 5" width="200" height="200">
+        <h3>Choclate Cake</h3>
+        <p>Freshly baked Choclatecake.</p>
+        <p class="price">Rs.210</p>
+    </div>
+        <footer>
+            <h3>contact us</h3>
+                <a href="+91 9987345677">+91 7788905466</a><br>
+            <a href="mailto:hege@example.com">cafeerica22@gmail.com</a></p>
+            <p>Address:Cafeerica North Paravur  KOchi</p>
+            <div class="footer-container">
+              
+              <div class="footer-section social">
+                  <h3>Follow Us</h3>
+                  <a href="" class="social-link">Facebook</a>
+                  <a href="#" class="social-link">Twitter</a>
+                  <a href="#" class="social-link">Instagram</a>
+                  <a href="#" class="social-link">LinkedIn</a>
+              </div>
+          </footer>
+      
+    </div>
+    
+    </body>
+    </html>
+    
+</html>
